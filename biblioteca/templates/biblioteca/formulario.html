@@ -1,0 +1,24 @@
+{% extends 'biblioteca/base.html' %}
+
+{% block content %}
+<h2>{{ accion }} Libro</h2>
+
+<form method="post" class="mt-4">
+    {% csrf_token %}
+    
+    {% for field in form %}
+        <div class="mb-3">
+            <label class="form-label">{{ field.label }}</label>
+            {{ field }}
+            {% if field.errors %}
+                <div class="text-danger">
+                    {{ field.errors }}
+                </div>
+            {% endif %}
+        </div>
+    {% endfor %}
+    
+    <button type="submit" class="btn btn-guardar">Guardar</button>
+    <a href="{% url 'listar_libros' %}" class="btn btn-cancelar">Cancelar</a>
+</form>
+{% endblock %}

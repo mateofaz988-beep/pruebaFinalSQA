@@ -1,0 +1,65 @@
+.navbar {
+    background-color: #5d4037 !important;
+}
+
+.btn-agregar {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+}
+
+.btn-agregar:hover {
+    background-color: #6c3483;
+    color: white;
+}
+
+.btn-editar {
+    background-color: #d68910;
+    color: white;
+    border: none;
+}
+
+.btn-editar:hover {
+    background-color: #b9770e;
+    color: white;
+}
+
+.btn-eliminar {
+    background-color: #922b21;
+    color: white;
+    border: none;
+}
+
+.btn-eliminar:hover {
+    background-color: #78231c;
+    color: white;
+}
+
+.btn-guardar {
+    background-color: #af601a;
+    color: white;
+    border: none;
+}
+
+.btn-guardar:hover {
+    background-color: #935116;
+    color: white;
+}
+
+.btn-cancelar {
+    background-color: #626567;
+    color: white;
+    border: none;
+}
+
+.btn-cancelar:hover {
+    background-color: #515a5a;
+    color: white;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
